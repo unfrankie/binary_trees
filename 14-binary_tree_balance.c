@@ -29,5 +29,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
-	return (clone_height(tree->left) - clone_height(tree->right));
+	else
+		return (clone_height(tree->left) - clone_height(tree->right));
 }
